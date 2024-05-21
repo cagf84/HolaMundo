@@ -10,7 +10,7 @@ public class HolaMundo : MonoBehaviour
         print("Algo a mostrar");
         Debug.Log("Algo paso");
         Debug.LogWarning("Algo salio con alerta");
-        Debug.LogError("Algo salio muy mal");
+        Debug.LogError("Algo salio con Error");
     }
 
     // Update is called once per frame
