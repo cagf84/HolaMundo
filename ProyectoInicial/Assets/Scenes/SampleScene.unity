@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &628670998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6093244258915131703, guid: d657832f8dd63994d93026b91a954284, type: 3}
+  m_PrefabInstance: {fileID: 4223509649420850465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &760513417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1874073409787993046, guid: 29ddbf9804b2ccc49a101fbc38f6833a, type: 3}
+  m_PrefabInstance: {fileID: 4854144524010573372}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &763306378
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +227,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &789057810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5361252719874660203, guid: 7286ca6979bc00846b58a0635e3f0d72, type: 3}
+  m_PrefabInstance: {fileID: 1101961166066393900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1587998381
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +244,10 @@ GameObject:
   - component: {fileID: 1587998384}
   - component: {fileID: 1587998383}
   - component: {fileID: 1587998386}
+  - component: {fileID: 1587998387}
+  - component: {fileID: 1587998388}
+  - component: {fileID: 1587998389}
+  - component: {fileID: 1587998390}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -311,9 +330,73 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587998381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3cb97ed4823b3a4a913b5e393d3cad2, type: 3}
+  m_Script: {fileID: 11500000, guid: bd546777ad40451448752ab218f2525e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CapsulaEBAC: {fileID: 760513417}
+  cambiocolorCapsula: 0
+--- !u!114 &1587998387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587998381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b155411ae25c564a99eaa3bfd0bdef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EsferaEBAC: {fileID: 789057810}
+  cambiocolorEsfera: 0
+--- !u!114 &1587998388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587998381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d23eeae3412c7419df02b6fbb679cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CuboEBAC: {fileID: 628670998}
+  colorCuboEBAC: 0
+  colorCapsulaEBAC: 0
+  cambiocolorCubo: 0
+--- !u!114 &1587998389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587998381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe70df88a640cd49b06e82fe37e7984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CuboEBAC_OR: {fileID: 628670998}
+  colorCuboEBAC_OR: 0
+  colorCapsulaEBAC_OR: 0
+  cambiocolorCubo_OR: 0
+--- !u!114 &1587998390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587998381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c12eb3ef66e4941acb22b9404e5602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cubo5: {fileID: 628670998}
+  colorCubo5: 0
+  colorCuboOR5: 0
+  cambiocolorCubo5: 0
 --- !u!1001 &1101961166066393900
 PrefabInstance:
   m_ObjectHideFlags: 0

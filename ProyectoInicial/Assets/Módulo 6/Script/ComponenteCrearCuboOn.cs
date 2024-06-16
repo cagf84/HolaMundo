@@ -56,8 +56,8 @@ public class ComponenteCrearCuboOn : MonoBehaviour
         objToSpawn.AddComponent<MeshRenderer>();
         var meshrender = objToSpawn.GetComponent<MeshRenderer>().material;
 
-        Color c = new Color(Random.value, Random.value, Random.value);
-        meshrender.color = c;
+        //Color c = new Color(Random.value, Random.value, Random.value);
+        //meshrender.color = c;
         objToSpawn.transform.position = Vector3.one;
     }
 
@@ -80,8 +80,8 @@ public class ComponenteCrearCuboOn : MonoBehaviour
         objToSpawn.AddComponent<MeshRenderer>();
         var meshrender = objToSpawn.GetComponent<MeshRenderer>().material;
 
-        Color c = new Color(Random.value, Random.value, Random.value);
-        meshrender.color = c;
+        //Color c = new Color(Random.value, Random.value, Random.value);
+        //meshrender.color = c;
         objToSpawn.transform.position = Vector3.one;
     }
 }
