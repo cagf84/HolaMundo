@@ -133,6 +133,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1874073409787993046, guid: 29ddbf9804b2ccc49a101fbc38f6833a, type: 3}
   m_PrefabInstance: {fileID: 4854144524010573372}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &760513422
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760513417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &763306378
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +246,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5361252719874660203, guid: 7286ca6979bc00846b58a0635e3f0d72, type: 3}
   m_PrefabInstance: {fileID: 1101961166066393900}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &789057815
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789057810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1587998381
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,11 +357,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587998381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd546777ad40451448752ab218f2525e, type: 3}
+  m_Script: {fileID: 11500000, guid: 58535629f1f5be340833cb1ea3090559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CapsulaEBAC: {fileID: 760513417}
-  cambiocolorCapsula: 0
+  Item1: {fileID: 760513417}
+  cambiocolorItem1: 0
 --- !u!114 &1587998387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,11 +371,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587998381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b155411ae25c564a99eaa3bfd0bdef4, type: 3}
+  m_Script: {fileID: 11500000, guid: c3894aec5f1ef7743ab482a36793b681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EsferaEBAC: {fileID: 789057810}
-  cambiocolorEsfera: 0
+  Item2: {fileID: 789057810}
+  cambiocolorItem2: 0
 --- !u!114 &1587998388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,13 +385,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587998381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d23eeae3412c7419df02b6fbb679cf, type: 3}
+  m_Script: {fileID: 11500000, guid: ff2bf71112b290a46bf953415cfefa7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CuboEBAC: {fileID: 628670998}
-  colorCuboEBAC: 0
-  colorCapsulaEBAC: 0
-  cambiocolorCubo: 0
+  Item3: {fileID: 628670998}
+  tempComponente1: {fileID: 1587998386}
+  tempComponente2: {fileID: 1587998387}
+  cambiocolorItem3: 0
 --- !u!114 &1587998389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,13 +401,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587998381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbe70df88a640cd49b06e82fe37e7984, type: 3}
+  m_Script: {fileID: 11500000, guid: da9ee63bb397ad4458920fc46071ed9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CuboEBAC_OR: {fileID: 628670998}
-  colorCuboEBAC_OR: 0
-  colorCapsulaEBAC_OR: 0
-  cambiocolorCubo_OR: 0
+  Item4: {fileID: 628670998}
+  tempComponente1: {fileID: 1587998386}
+  tempComponente2: {fileID: 1587998387}
+  cambiocolorItem4: 0
 --- !u!114 &1587998390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,13 +417,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587998381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c12eb3ef66e4941acb22b9404e5602, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d938b491f2809b43816db7948106d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cubo5: {fileID: 628670998}
-  colorCubo5: 0
-  colorCuboOR5: 0
-  cambiocolorCubo5: 0
+  Item5: {fileID: 628670998}
+  tempComponente3: {fileID: 1587998388}
+  tempComponente4: {fileID: 1587998389}
+  cambiocolorItem5: 0
 --- !u!1001 &1101961166066393900
 PrefabInstance:
   m_ObjectHideFlags: 0
