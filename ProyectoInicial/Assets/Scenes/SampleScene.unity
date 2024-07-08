@@ -269,12 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1587998385}
   - component: {fileID: 1587998384}
-  - component: {fileID: 1587998383}
   - component: {fileID: 1587998386}
-  - component: {fileID: 1587998387}
-  - component: {fileID: 1587998388}
-  - component: {fileID: 1587998389}
-  - component: {fileID: 1587998390}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -282,14 +277,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1587998383
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587998381}
-  m_Enabled: 0
 --- !u!20 &1587998384
 Camera:
   m_ObjectHideFlags: 0
@@ -357,73 +344,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587998381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58535629f1f5be340833cb1ea3090559, type: 3}
+  m_Script: {fileID: 11500000, guid: 14e25e9a16679fc42963f188d186face, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item1: {fileID: 760513417}
-  cambiocolorItem1: 0
---- !u!114 &1587998387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587998381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3894aec5f1ef7743ab482a36793b681, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item2: {fileID: 789057810}
-  cambiocolorItem2: 0
---- !u!114 &1587998388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587998381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff2bf71112b290a46bf953415cfefa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item3: {fileID: 628670998}
-  tempComponente1: {fileID: 1587998386}
-  tempComponente2: {fileID: 1587998387}
-  cambiocolorItem3: 0
---- !u!114 &1587998389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587998381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da9ee63bb397ad4458920fc46071ed9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item4: {fileID: 628670998}
-  tempComponente1: {fileID: 1587998386}
-  tempComponente2: {fileID: 1587998387}
-  cambiocolorItem4: 0
---- !u!114 &1587998390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587998381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d938b491f2809b43816db7948106d6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Item5: {fileID: 628670998}
-  tempComponente3: {fileID: 1587998388}
-  tempComponente4: {fileID: 1587998389}
-  cambiocolorItem5: 0
+  Cubo: {fileID: 628670998}
 --- !u!1001 &1101961166066393900
 PrefabInstance:
   m_ObjectHideFlags: 0
