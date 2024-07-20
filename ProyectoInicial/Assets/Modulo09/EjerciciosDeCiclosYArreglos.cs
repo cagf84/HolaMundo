@@ -32,13 +32,13 @@ public class EjerciciosDeCiclosYArreglos : MonoBehaviour
         for (int x = 0; x < miArreglo3.Length; x++)
         {
             miArreglo3[x] = miArreglo1[x] + miArreglo2[x];
-            Debug.Log($"A1[{x}].valor[{miArreglo1[x]}] + A2[{x}].valor[{miArreglo2[x]}] = AT3[{x}].valor[{miArreglo3[x]}]");
+            Debug.Log($"A1[{x}].valor[{miArreglo1[x]}] + A2[{x}].valor[{miArreglo2[x]}] = A3[{x}].valor[{miArreglo3[x]}]");
         }
 
         //2) Crea un arreglo de strings y llena cada elemento con una palabra de una oración, 
         //después utilizando un ciclo foreach concatena sus elementos e imprime la oración
         //completa en la consola en un solo string.
-        string[] Horacion = new string[8] { "T", "a", "r", "e", "a", " ", "N", "9" };
+        string[] Horacion = new string[9] { "T", "a", "r", "e", "a", " ", "N", "9", "v2" };
 
         foreach (string Palabra in Horacion)
         {
