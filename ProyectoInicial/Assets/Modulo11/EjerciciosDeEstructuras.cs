@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
+using UnityEngine;
 
-public class EjerciciosEstructuras : MonoBehaviour
+public class EjerciciosDeEstructuras : MonoBehaviour
 {
     public List<int> listaNumeros = new List<int>();
     public HashSet<int> hashSetInts = new HashSet<int>();
