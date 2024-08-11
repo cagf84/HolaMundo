@@ -16,19 +16,19 @@ public class EjerciciosEstructuras : MonoBehaviour
     {
 
         ///1
-        //miFuncion(20, Random.Range(0, 10), Random.Range(11, 20));
+        miFuncion(20, Random.Range(0, 10), Random.Range(11, 20));
 
 
         ///2
-        //miFuncionOrdenada();
+        miFuncionOrdenada();
 
         ///3
-        //listaNumeros.Clear();
-        //for (int i = 0; i < 20; i++)
-        //{
-        //    listaNumeros.Add(Random.Range(0, 10));
-        //}
-        //miFuncionOrdenadaHashset(listaNumeros);
+        listaNumeros.Clear();
+        for (int i = 0; i < 20; i++)
+        {
+            listaNumeros.Add(Random.Range(0, 10));
+        }
+        miFuncionOrdenadaHashset(listaNumeros);
 
 
         ///4
