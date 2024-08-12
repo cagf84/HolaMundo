@@ -6,6 +6,7 @@ using UnityEngine;
 public class EjerciciosDeEstructuras : MonoBehaviour
 {
     public List<int> listaNumeros = new List<int>();
+    public List<int> listaOrdenada = new List<int>();
     public HashSet<int> hashSetInts = new HashSet<int>();
     public Stack<string> pilaString = new Stack<string>();
     public Queue<string> colaString = new Queue<string>();
@@ -16,10 +17,16 @@ public class EjerciciosDeEstructuras : MonoBehaviour
 
         ///1
         miFuncion(20, Random.Range(0, 10), Random.Range(11, 20));
-
+        Debug.Log("---------------------------------------------");
 
         ///2
         miFuncionOrdenada();
+        Debug.Log("Ej2 - Lista de numeros ordenada");
+        foreach (var numero in listaOrdenada)
+        {
+            Debug.Log(numero);
+        }
+        Debug.Log("---------------------------------------------");
 
         ///3
         listaNumeros.Clear();
@@ -28,15 +35,16 @@ public class EjerciciosDeEstructuras : MonoBehaviour
             listaNumeros.Add(Random.Range(0, 10));
         }
         miFuncionOrdenadaHashset(listaNumeros);
-
+        Debug.Log("---------------------------------------------");
 
         ///4
         pilaString.Push("Tarea");
         pilaString.Push("Modulo");
-        pilaString.Push("11");
+        pilaString.Push("11v2");
         pilaString.Push("EBAC");
         pilaString.Push("2024");
         miFuncionPila(pilaString);
+        Debug.Log("---------------------------------------------");
     }
 
 
@@ -50,9 +58,9 @@ public class EjerciciosDeEstructuras : MonoBehaviour
     {
         for (int i = 0; i < tamaño; i++)
         {
-            //listaNumeros.Add(i);
             listaNumeros.Add(Random.Range(rangoInferior, rangoSuperior));
         }
+        Debug.Log("Ej1 - Lista de numeros");
         foreach (var numero in listaNumeros)
         {
             Debug.Log(numero);
@@ -62,9 +70,10 @@ public class EjerciciosDeEstructuras : MonoBehaviour
     ///2
     ///Crea una función que reciba como entrada un arreglo de enteros, y regrese un 
     ///arreglo con los mismos números pero ordenados de manera descendente.
-    private void miFuncionOrdenada()
+    private List<int> miFuncionOrdenada()
     {
         listaNumeros.Clear();
+        Debug.Log("Ej2 - Lista Original");
         for (int i = 0; i < 20; i++)
         {
             listaNumeros.Add(Random.Range(0, 20));
@@ -73,12 +82,8 @@ public class EjerciciosDeEstructuras : MonoBehaviour
         {
             Debug.Log(numero);
         }
-        var listaOrdenada = listaNumeros.OrderByDescending(p => p).ToList();
-        Debug.Log("lista de numeros ordenada");
-        foreach (var numero in listaOrdenada)
-        {
-            Debug.Log(numero);
-        }
+        listaOrdenada = listaNumeros.OrderByDescending(p => p).ToList();
+        return listaOrdenada;
     }
 
     ///3
@@ -87,26 +92,20 @@ public class EjerciciosDeEstructuras : MonoBehaviour
     ///repetidos, puedes usar la función contains o linq para simplificar esto.
     private void miFuncionOrdenadaHashset(List<int> ListaAOrdenar)
     {
-        //Metodo A
-        Debug.Log("Lista Original");
+        //Opcion A v2
+        Debug.Log("Ej3 - Lista Original");
         foreach (var numero in ListaAOrdenar)
         {
             Debug.Log(numero);
+            hashSetInts.Add(numero);
         }
-        Debug.Log("lista de numeros ordenada hashSet");
-        for (int i = 0; i < ListaAOrdenar.Count; i++)
-        {
-            if (!hashSetInts.Contains(ListaAOrdenar[i]))
-            {
-                hashSetInts.Add(ListaAOrdenar[i]);
-            }
-        }
+        Debug.Log("Ej3 - Lista de numeros ordenada hashSet");
         foreach (var numero in hashSetInts)
         {
             Debug.Log(numero);
         }
 
-        //Metodo B
+        //Opcion B
         //Debug.Log("Lista Original");
         //foreach (var numero in ListaAOrdenar)
         //{
@@ -115,6 +114,29 @@ public class EjerciciosDeEstructuras : MonoBehaviour
         //var QueryLinq = ListaAOrdenar.Distinct().ToList();
         //Debug.Log("lista de numeros ordenada");
         //foreach (var numero in QueryLinq)
+        //{
+        //    Debug.Log(numero);
+        //}
+
+        //Opcion C
+        //Revision de Tarea otra opcion de aplicarlo
+        //hashSetInts = new HashSet<int>(ListaAOrdenar);
+
+        //Opcion A v1
+        //Debug.Log("Lista Original");
+        //foreach (var numero in ListaAOrdenar)
+        //{
+        //    Debug.Log(numero);
+        //}
+        //Debug.Log("lista de numeros ordenada hashSet");
+        //for (int i = 0; i < ListaAOrdenar.Count; i++)
+        //{
+        //    if (!hashSetInts.Contains(ListaAOrdenar[i]))
+        //    {
+        //        hashSetInts.Add(ListaAOrdenar[i]);
+        //    }
+        //}
+        //foreach (var numero in hashSetInts)
         //{
         //    Debug.Log(numero);
         //}
@@ -128,9 +150,41 @@ public class EjerciciosDeEstructuras : MonoBehaviour
     ///función no retornará nada, solo imprimirá los valores en la consola.
     private void miFuncionPila(Stack<string> pilaEjemplo)
     {
-        string contenido;
+        
         int contadorPila;
 
+        //Opcion A v2
+        Debug.Log("Ej4 - Pila Original");
+        contadorPila = pilaEjemplo.Count;
+        for (int i = 0; i < contadorPila; i++)
+        {
+            Debug.Log(pilaEjemplo.Peek());
+            colaString.Enqueue(pilaEjemplo.Pop());
+        }
+        Debug.Log("Ej4 - Cola copiada Pila");
+        foreach (var cola in colaString)
+        {
+            Debug.Log(cola);
+        }
+
+
+        //Opcion A v1
+        //string contenido;
+        //Debug.Log("Pila Original");
+        //contadorPila = pilaEjemplo.Count;
+        //for (int i = 0; i < contadorPila; i++)
+        //{
+        //    contenido = (string)pilaEjemplo.Pop();
+        //    Debug.Log(contenido);
+        //    colaString.Enqueue(contenido);
+        //}
+        //Debug.Log("Cola copiada Pila");
+        //foreach (var cola in colaString)
+        //{
+        //    Debug.Log(cola);
+        //}
+
+        //Opcion2
         //Debug.Log("Pila Original");
         //foreach (var pila in pilaEjemplo)
         //{
@@ -143,19 +197,5 @@ public class EjerciciosDeEstructuras : MonoBehaviour
         //{
         //    Debug.Log(cola);
         //}
-
-        Debug.Log("Pila Original");
-        contadorPila = pilaEjemplo.Count;
-        for (int i = 0; i < contadorPila; i++)
-        {
-            contenido = (string)pilaEjemplo.Pop();
-            Debug.Log(contenido);
-            colaString.Enqueue(contenido);
-        }
-        Debug.Log("Cola copiada Pila");
-        foreach (var cola in colaString)
-        {
-            Debug.Log(cola);
-        }
     }
 }
